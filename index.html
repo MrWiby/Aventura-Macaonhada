@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Aventura Maconhada</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="">
+            <p>Um certo dia, [Você] encontra nada mais nada menos que uma construção aparentemente arcaica enquanto passeava pela floresta, o que fazer?</p>
+            <button class="btn-proximo" data-proximo="1">Só ir embora</button>
+            <button class="btn-proximo" data-proximo="2">Entrar na construção</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>[Você] decide só ir embora, continuando sua jornada pela floresta. {FIM}</p>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>[Você] adentra a construção estranha, este local parece realmente antigo e saido direto de um reino medieval. Ao adentrar mais a fundo, [Você] se depara com uma sala iluminada por algumas tochas, dentro da sala, há dois portais, um azul, e outro roxo.</p>
+            <button class="btn-proximo" data-proximo="5">Atravessar O portal Azul</button>
+            <button class="btn-proximo" data-proximo="6">Atravessar O portal Roxo</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>No topo do Pico da Tijuca, você encontra uma antiga inscrição apontando que a próxima pista está
+                localizada no Amazonas.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para o Amazonas</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-voltar-casa.png" alt="imagem voltando para casa e desitindo da aventura">
+            <p>Você decide que a aventura é grande demais e volta para casa, mas sempre se pergunta o que teria
+                encontrado.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>[Você] entra no portal azul, tal portal leva [Você] até o fundo do oceano! Infelizmente, [Você] não consegue chegar a superfície e acaba se afogando. {FIM}</p>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>[Você] entra no portal roxo, tal portal acaba levando [Você] para uma casa muito aconchegante. Lá, [Você] encontra uma versão alternativa de [Você]! Parece que essa versão mora aqui, e está tão confusa quanto [Você] está.</p>
+            <button class="btn-proximo" data-proximo="8">Conversar pacificamente</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>[Você] decide conversar pacificamente com [Talvez Você], ambos percebendo que tem muito mais em comum do que imaginavam. Decidindo assim, trabalhar em equipe para realizar um de seus maiores sonhos.</p>
+            <button class="btn-proximo" data-proximo="11">Prosseguir</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <img src="img/cenario-passo11-cidade-perdida.png" alt="encontrando uma cidade maravilhosa perdida no Amazonas">
+            <p>[Vocês] voltam para a realidade de [Você], transformando a sala de portais em sua base de operações e rapidamente recrutando versões alternativas de [Vocês] para formar uma equipe de exploradores multiversais, buscando unir todos universos existentes afim de conquistar a paz. {FIM}</p>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
